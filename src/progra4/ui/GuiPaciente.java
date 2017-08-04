@@ -6,6 +6,7 @@
 package progra4.ui;
 
 import progra4.Paciente;
+import progra4.ui.GuiExpediente;
 import progra4.Pantalla;
 
 /**
@@ -14,9 +15,6 @@ import progra4.Pantalla;
  */
 public class GuiPaciente extends javax.swing.JFrame {
 
-    /**
-     * Creates new form GuiDoctor
-     */
     Paciente paciente = new Paciente();
 
     public GuiPaciente() {
