@@ -80,7 +80,7 @@ public class GuiMenu extends javax.swing.JFrame {
             }
         });
 
-        jButtonCita.setText("Cita");
+        jButtonCita.setText("Citas");
         jButtonCita.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonCitaActionPerformed(evt);
