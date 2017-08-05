@@ -110,6 +110,11 @@ public class GuiPaciente extends javax.swing.JFrame {
         });
 
         jButtonMenu.setText("Menu");
+        jButtonMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonMenuActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("Fecha Nacimiento");
 
@@ -367,6 +372,14 @@ public class GuiPaciente extends javax.swing.JFrame {
     private void jComboBoxIdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxIdActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jComboBoxIdActionPerformed
+
+    private void jButtonMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMenuActionPerformed
+
+        GuiMenu menu = new GuiMenu();
+        menu.setVisible(true);
+        this.setVisible(false);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonMenuActionPerformed
 
     /**
      * @param args the command line arguments

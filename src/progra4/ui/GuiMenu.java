@@ -16,7 +16,7 @@ public class GuiMenu extends javax.swing.JFrame {
      */
     public GuiMenu() {
         initComponents();
-    }
+            }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -189,12 +189,13 @@ public class GuiMenu extends javax.swing.JFrame {
                         .addComponent(jButtonCita4))
                     .addComponent(jButtonPaciente1, javax.swing.GroupLayout.Alignment.TRAILING))
                 .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButtonCita)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButtonCita1)
-                    .addComponent(jButtonCita3)
-                    .addComponent(jButtonCita2)
-                    .addComponent(jButtonPaciente))
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(jButtonCita)
+                        .addComponent(jButtonCita3)
+                        .addComponent(jButtonCita2)
+                        .addComponent(jButtonPaciente)))
                 .addGap(44, 44, 44)
                 .addComponent(jButtonSalir)
                 .addGap(184, 184, 184))
@@ -228,6 +229,7 @@ public class GuiMenu extends javax.swing.JFrame {
         
         GuiDoctor doctor = new GuiDoctor();
         doctor.setVisible(true);
+        this.setVisible(false);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonDoctorActionPerformed
 
@@ -235,6 +237,7 @@ public class GuiMenu extends javax.swing.JFrame {
         
         GuiAsistente asistente = new GuiAsistente();
         asistente.setVisible(true);
+        this.setVisible(false);
 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonAsistenteActionPerformed
@@ -243,6 +246,7 @@ public class GuiMenu extends javax.swing.JFrame {
         
         GuiUsuario usuario = new GuiUsuario();
         usuario.setVisible(true);
+        this.setVisible(false);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonUsuarioActionPerformed
 
@@ -250,6 +254,7 @@ public class GuiMenu extends javax.swing.JFrame {
 
         GuiCitas citas = new GuiCitas();
         citas.setVisible(true);
+        this.setVisible(false);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonCitaActionPerformed
 
@@ -257,6 +262,7 @@ public class GuiMenu extends javax.swing.JFrame {
 
         GuiPaciente paciente = new GuiPaciente();
         paciente.setVisible(true);
+        this.setVisible(false);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonPacienteActionPerformed
 
@@ -264,28 +270,33 @@ public class GuiMenu extends javax.swing.JFrame {
                 
         GuiPermisos permisos = new GuiPermisos();
         permisos.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButtonCita1ActionPerformed
 
     private void jButtonCita2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCita2ActionPerformed
                 
         GuiPantalla pantalla = new GuiPantalla();
         pantalla.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButtonCita2ActionPerformed
 
     private void jButtonCita3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCita3ActionPerformed
         
         GuiExpediente expediente = new GuiExpediente();
         expediente.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButtonCita3ActionPerformed
 
     private void jButtonCita4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCita4ActionPerformed
         GuiEspecialidades especialidades = new GuiEspecialidades();
         especialidades.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButtonCita4ActionPerformed
 
     private void jButtonPaciente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPaciente1ActionPerformed
         GuiServicios servicios = new GuiServicios();
         servicios.setVisible(true);
+        this.setVisible(false);
     }//GEN-LAST:event_jButtonPaciente1ActionPerformed
 
     /**

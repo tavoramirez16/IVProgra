@@ -110,6 +110,11 @@ public class GuiPantalla extends javax.swing.JFrame {
         });
 
         jButtonMenu.setText("Menu");
+        jButtonMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonMenuActionPerformed(evt);
+            }
+        });
 
         jTextAreaDescripcion.setColumns(20);
         jTextAreaDescripcion.setRows(5);
@@ -324,6 +329,14 @@ public class GuiPantalla extends javax.swing.JFrame {
         limpiar();
     }//GEN-LAST:event_jButtonEliminarActionPerformed
 
+    private void jButtonMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMenuActionPerformed
+
+        GuiMenu menu = new GuiMenu();
+        menu.setVisible(true);
+        this.setVisible(false);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonMenuActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -366,25 +379,16 @@ public class GuiPantalla extends javax.swing.JFrame {
     private javax.swing.JButton jButtonMenu;
     private javax.swing.JButton jButtonSalir;
     private javax.swing.JComboBox<String> jComboBoxBusqueda;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabelMensaje;
-    private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTextArea jTextAreaDescripcion;
-    private javax.swing.JTextField jTextFieldIdentificacion;
     private javax.swing.JTextField jTextFieldIdentificacion1;
     private javax.swing.JTextField jTextFieldNombre;
     // End of variables declaration//GEN-END:variables

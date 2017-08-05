@@ -275,6 +275,10 @@ public class GuiExpediente extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGuardarActionPerformed
+
+        GuiMenu menu = new GuiMenu();
+        menu.setVisible(true);
+        this.setVisible(false);
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonGuardarActionPerformed
 

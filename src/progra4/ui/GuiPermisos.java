@@ -107,6 +107,11 @@ public class GuiPermisos extends javax.swing.JFrame {
         });
 
         jButtonMenu.setText("Menu");
+        jButtonMenu.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonMenuActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -228,6 +233,14 @@ public class GuiPermisos extends javax.swing.JFrame {
     private void jButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonSalirActionPerformed
+
+    private void jButtonMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMenuActionPerformed
+
+        GuiMenu menu = new GuiMenu();
+        menu.setVisible(true);
+        this.setVisible(false);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonMenuActionPerformed
 
     /**
      * @param args the command line arguments
