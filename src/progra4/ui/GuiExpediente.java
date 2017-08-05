@@ -20,6 +20,7 @@ public class GuiExpediente extends javax.swing.JFrame {
     
     public GuiExpediente() {
         initComponents();
+        imprimirselect();
     }
     
     

@@ -5,6 +5,8 @@
  */
 package progra4;
 
+import progra4.ui.GuiExpediente;
+import progra4.ui.GuiMenu;
 import progra4.ui.GuiPantalla;
 import progra4.ui.GuiPaciente;
 
@@ -23,12 +25,15 @@ public class Progra4 {
         Doctor doctor = new Doctor();
         GuiPantalla pantalla = new GuiPantalla();
         GuiPaciente paciente = new GuiPaciente();
+        GuiExpediente expediente = new GuiExpediente();
+        GuiMenu menu = new GuiMenu();
         if(conect.connect()){
            // doctor.agregar();
             //doctor.editar();
             //doctor.imprimir();
            // doctor.eliminar();
-           paciente.setVisible(true);
+           menu.setVisible(true);
+          // paciente.setVisible(true);
            //pantalla.setVisible(true);
         }else{
         }
