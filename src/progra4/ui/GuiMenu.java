@@ -87,7 +87,7 @@ public class GuiMenu extends javax.swing.JFrame {
             }
         });
 
-        jButtonPaciente.setText("Paciente");
+        jButtonPaciente.setText("Pacientes");
         jButtonPaciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonPacienteActionPerformed(evt);
