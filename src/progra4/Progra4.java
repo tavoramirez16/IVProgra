@@ -22,19 +22,9 @@ public class Progra4 {
      */
     public static void main(String[] args) {
         Conexiondb conect = new Conexiondb();
-        Doctor doctor = new Doctor();
-        GuiPantalla pantalla = new GuiPantalla();
-        GuiPaciente paciente = new GuiPaciente();
-        GuiExpediente expediente = new GuiExpediente();
         GuiMenu menu = new GuiMenu();
         if(conect.connect()){
-           // doctor.agregar();
-            //doctor.editar();
-            //doctor.imprimir();
-           // doctor.eliminar();
            menu.setVisible(true);
-          // paciente.setVisible(true);
-           //pantalla.setVisible(true);
         }else{
         }
     }
