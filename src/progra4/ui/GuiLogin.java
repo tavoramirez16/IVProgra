@@ -39,9 +39,10 @@ public class GuiLogin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(330, 300));
+        setUndecorated(true);
         getContentPane().setLayout(null);
 
-        jButtonSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cerrar3-01.png"))); // NOI18N
+        jButtonSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cerrar4-01.png"))); // NOI18N
         jButtonSalir.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
         jButtonSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -49,7 +50,7 @@ public class GuiLogin extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButtonSalir);
-        jButtonSalir.setBounds(10, 200, 50, 50);
+        jButtonSalir.setBounds(10, 250, 40, 40);
 
         jButton1.setText("Ingresar");
         jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.lightGray, java.awt.Color.lightGray, java.awt.Color.lightGray));
@@ -59,17 +60,17 @@ public class GuiLogin extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(160, 140, 80, 21);
+        jButton1.setBounds(160, 170, 80, 21);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setText("Usuario:");
         getContentPane().add(jLabel2);
-        jLabel2.setBounds(80, 80, 46, 14);
+        jLabel2.setBounds(80, 110, 46, 14);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel3.setText("Contraseña:");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(70, 110, 68, 14);
+        jLabel3.setBounds(70, 140, 68, 14);
 
         jTextField1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -77,7 +78,7 @@ public class GuiLogin extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(150, 80, 100, 20);
+        jTextField1.setBounds(150, 110, 100, 20);
 
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,7 +86,7 @@ public class GuiLogin extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextField2);
-        jTextField2.setBounds(150, 110, 100, 20);
+        jTextField2.setBounds(150, 140, 100, 20);
 
         jLabel1.setFont(new java.awt.Font("Bitsumishi", 1, 36)); // NOI18N
         jLabel1.setText("Login");
@@ -95,7 +96,7 @@ public class GuiLogin extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo.jpg"))); // NOI18N
         jLabel4.setText("jLabel4");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(0, 0, 380, 310);
+        jLabel4.setBounds(0, -10, 380, 320);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
