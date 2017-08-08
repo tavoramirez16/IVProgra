@@ -6,6 +6,7 @@
 package progra4;
 
 import progra4.ui.GuiExpediente;
+import progra4.ui.GuiLogin;
 import progra4.ui.GuiMenu;
 import progra4.ui.GuiPantalla;
 import progra4.ui.GuiPaciente;
@@ -21,11 +22,12 @@ public class Progra4 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        Conexiondb conect = new Conexiondb();
+       Conexiondb conect = new Conexiondb();
         GuiMenu menu = new GuiMenu();
+        GuiLogin login = new GuiLogin();
         if(conect.connect()){
-           menu.setVisible(true);
-        }else{
+           login.setVisible(true);
+       }else{
         }
     }
     

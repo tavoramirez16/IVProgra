@@ -16,6 +16,7 @@ public class GuiLogin extends javax.swing.JFrame {
      */
     public GuiLogin() {
         initComponents();
+        this.setLocationRelativeTo(null);
     }
 
     /**
@@ -27,8 +28,8 @@ public class GuiLogin extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jButtonSalir = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jTextField1 = new javax.swing.JTextField();
@@ -40,24 +41,25 @@ public class GuiLogin extends javax.swing.JFrame {
         setMinimumSize(new java.awt.Dimension(330, 300));
         getContentPane().setLayout(null);
 
+        jButtonSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cerrar3-01.png"))); // NOI18N
+        jButtonSalir.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jButtonSalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonSalirActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonSalir);
+        jButtonSalir.setBounds(10, 200, 50, 50);
+
         jButton1.setText("Ingresar");
+        jButton1.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED, java.awt.Color.lightGray, java.awt.Color.lightGray, java.awt.Color.lightGray, java.awt.Color.lightGray));
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton1);
-        jButton1.setBounds(80, 170, 80, 23);
-
-        jButton2.setText("Salir");
-        jButton2.setCursor(new java.awt.Cursor(java.awt.Cursor.S_RESIZE_CURSOR));
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(jButton2);
-        jButton2.setBounds(180, 170, 73, 23);
+        jButton1.setBounds(160, 140, 80, 21);
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabel2.setText("Usuario:");
@@ -85,10 +87,10 @@ public class GuiLogin extends javax.swing.JFrame {
         getContentPane().add(jTextField2);
         jTextField2.setBounds(150, 110, 100, 20);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Bitsumishi", 1, 36)); // NOI18N
         jLabel1.setText("Login");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(140, 20, 100, 40);
+        jLabel1.setBounds(110, 20, 120, 40);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo.jpg"))); // NOI18N
         jLabel4.setText("jLabel4");
@@ -102,10 +104,6 @@ public class GuiLogin extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField1ActionPerformed
@@ -113,6 +111,12 @@ public class GuiLogin extends javax.swing.JFrame {
     private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextField2ActionPerformed
+
+    private void jButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirActionPerformed
+
+        System.exit(0);//Cerrar la ventana
+        
+    }//GEN-LAST:event_jButtonSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -151,7 +155,7 @@ public class GuiLogin extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButtonSalir;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

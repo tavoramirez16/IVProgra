@@ -94,9 +94,9 @@
                                       <Component id="jButtonCita" alignment="1" min="-2" pref="87" max="-2" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Group type="103" groupAlignment="1" attributes="0">
-                                      <Component id="jButtonCita2" min="-2" pref="87" max="-2" attributes="0"/>
-                                      <Component id="jButtonCita4" min="-2" pref="115" max="-2" attributes="0"/>
+                                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                      <Component id="jButtonCita2" max="32767" attributes="0"/>
+                                      <Component id="jButtonCita4" pref="115" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="jLabel4" min="-2" max="-2" attributes="0"/>
