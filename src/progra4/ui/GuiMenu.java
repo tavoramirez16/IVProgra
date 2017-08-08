@@ -16,7 +16,8 @@ public class GuiMenu extends javax.swing.JFrame {
      */
     public GuiMenu() {
         initComponents();
-            }
+        this.setLocationRelativeTo(null);
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -27,14 +28,7 @@ public class GuiMenu extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonGroup1 = new javax.swing.ButtonGroup();
-        buttonGroup2 = new javax.swing.ButtonGroup();
-        buttonGroup3 = new javax.swing.ButtonGroup();
-        buttonGroup4 = new javax.swing.ButtonGroup();
-        jRadioButton7 = new javax.swing.JRadioButton();
-        jPanel1 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         jButtonSalir = new javax.swing.JButton();
         jButtonDoctor = new javax.swing.JButton();
         jButtonUsuario = new javax.swing.JButton();
@@ -46,23 +40,30 @@ public class GuiMenu extends javax.swing.JFrame {
         jButtonCita3 = new javax.swing.JButton();
         jButtonCita4 = new javax.swing.JButton();
         jButtonPaciente1 = new javax.swing.JButton();
-
-        jRadioButton7.setText("jRadioButton7");
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setMaximumSize(new java.awt.Dimension(600, 410));
+        setMinimumSize(new java.awt.Dimension(600, 410));
+        setUndecorated(true);
+        setPreferredSize(new java.awt.Dimension(600, 410));
+        getContentPane().setLayout(null);
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI Light", 1, 18)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Bitsumishi", 1, 36)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 51));
+        jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel3.setText("MENU");
+        getContentPane().add(jLabel3);
+        jLabel3.setBounds(20, 20, 120, 40);
 
-        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-
-        jButtonSalir.setText("Salir");
+        jButtonSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cerrar4-01.png"))); // NOI18N
         jButtonSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonSalirActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonSalir);
+        jButtonSalir.setBounds(540, 10, 40, 40);
 
         jButtonDoctor.setText("Doctor");
         jButtonDoctor.addActionListener(new java.awt.event.ActionListener() {
@@ -70,6 +71,8 @@ public class GuiMenu extends javax.swing.JFrame {
                 jButtonDoctorActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonDoctor);
+        jButtonDoctor.setBounds(30, 130, 100, 23);
 
         jButtonUsuario.setText("Usuario");
         jButtonUsuario.addActionListener(new java.awt.event.ActionListener() {
@@ -77,6 +80,8 @@ public class GuiMenu extends javax.swing.JFrame {
                 jButtonUsuarioActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonUsuario);
+        jButtonUsuario.setBounds(30, 170, 100, 23);
 
         jButtonAsistente.setText("Asistente");
         jButtonAsistente.addActionListener(new java.awt.event.ActionListener() {
@@ -84,6 +89,8 @@ public class GuiMenu extends javax.swing.JFrame {
                 jButtonAsistenteActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonAsistente);
+        jButtonAsistente.setBounds(30, 90, 100, 23);
 
         jButtonCita.setText("Citas");
         jButtonCita.addActionListener(new java.awt.event.ActionListener() {
@@ -91,6 +98,8 @@ public class GuiMenu extends javax.swing.JFrame {
                 jButtonCitaActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonCita);
+        jButtonCita.setBounds(180, 250, 120, 23);
 
         jButtonPaciente.setText("Pacientes");
         jButtonPaciente.addActionListener(new java.awt.event.ActionListener() {
@@ -98,6 +107,8 @@ public class GuiMenu extends javax.swing.JFrame {
                 jButtonPacienteActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonPaciente);
+        jButtonPaciente.setBounds(180, 210, 120, 23);
 
         jButtonCita1.setText("Permisos");
         jButtonCita1.addActionListener(new java.awt.event.ActionListener() {
@@ -105,6 +116,8 @@ public class GuiMenu extends javax.swing.JFrame {
                 jButtonCita1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonCita1);
+        jButtonCita1.setBounds(30, 210, 100, 23);
 
         jButtonCita2.setText("Pantalla");
         jButtonCita2.addActionListener(new java.awt.event.ActionListener() {
@@ -112,6 +125,8 @@ public class GuiMenu extends javax.swing.JFrame {
                 jButtonCita2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonCita2);
+        jButtonCita2.setBounds(180, 90, 120, 23);
 
         jButtonCita3.setText("Expedientes");
         jButtonCita3.addActionListener(new java.awt.event.ActionListener() {
@@ -119,6 +134,8 @@ public class GuiMenu extends javax.swing.JFrame {
                 jButtonCita3ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonCita3);
+        jButtonCita3.setBounds(180, 130, 120, 23);
 
         jButtonCita4.setText("Expecialidades");
         jButtonCita4.addActionListener(new java.awt.event.ActionListener() {
@@ -126,6 +143,8 @@ public class GuiMenu extends javax.swing.JFrame {
                 jButtonCita4ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonCita4);
+        jButtonCita4.setBounds(180, 170, 120, 23);
 
         jButtonPaciente1.setText("Servicios");
         jButtonPaciente1.addActionListener(new java.awt.event.ActionListener() {
@@ -133,130 +152,49 @@ public class GuiMenu extends javax.swing.JFrame {
                 jButtonPaciente1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jButtonPaciente1);
+        jButtonPaciente1.setBounds(30, 250, 100, 23);
 
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(39, 39, 39)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButtonDoctor, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButtonPaciente, javax.swing.GroupLayout.DEFAULT_SIZE, 101, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jButtonSalir, javax.swing.GroupLayout.PREFERRED_SIZE, 259, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(0, 0, Short.MAX_VALUE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(84, 84, 84)
-                                .addComponent(jLabel3)
-                                .addGap(0, 0, Short.MAX_VALUE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jButtonCita3)
-                                    .addComponent(jButtonAsistente, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jButtonUsuario, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jButtonCita, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                                    .addComponent(jButtonCita2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(jButtonCita4, javax.swing.GroupLayout.DEFAULT_SIZE, 115, Short.MAX_VALUE))
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel4)))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButtonCita1, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButtonPaciente1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap())))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jLabel3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButtonDoctor)
-                        .addComponent(jButtonAsistente)
-                        .addComponent(jButtonUsuario)
-                        .addComponent(jButtonCita4))
-                    .addComponent(jButtonPaciente1, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButtonCita1)
-                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(jButtonCita)
-                        .addComponent(jButtonCita3)
-                        .addComponent(jButtonCita2)
-                        .addComponent(jButtonPaciente)))
-                .addGap(44, 44, 44)
-                .addComponent(jButtonSalir)
-                .addGap(184, 184, 184))
-        );
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(23, 23, 23)
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 226, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Clinica3-01.png"))); // NOI18N
+        jLabel1.setText("jLabel1");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 610, 420);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonSalirActionPerformed
-
-    private void jButtonDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDoctorActionPerformed
-        
-        GuiDoctor doctor = new GuiDoctor();
-        doctor.setVisible(true);
+    private void jButtonPaciente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPaciente1ActionPerformed
+        GuiServicios servicios = new GuiServicios();
+        servicios.setVisible(true);
         this.setVisible(false);
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonDoctorActionPerformed
+    }//GEN-LAST:event_jButtonPaciente1ActionPerformed
 
-    private void jButtonAsistenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAsistenteActionPerformed
-        
-        GuiAsistente asistente = new GuiAsistente();
-        asistente.setVisible(true);
+    private void jButtonCita4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCita4ActionPerformed
+        GuiEspecialidades especialidades = new GuiEspecialidades();
+        especialidades.setVisible(true);
         this.setVisible(false);
+    }//GEN-LAST:event_jButtonCita4ActionPerformed
 
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonAsistenteActionPerformed
+    private void jButtonCita3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCita3ActionPerformed
 
-    private void jButtonUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonUsuarioActionPerformed
-        
-        GuiUsuario usuario = new GuiUsuario();
-        usuario.setVisible(true);
+        GuiExpediente expediente = new GuiExpediente();
+        expediente.setVisible(true);
         this.setVisible(false);
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonUsuarioActionPerformed
+    }//GEN-LAST:event_jButtonCita3ActionPerformed
 
-    private void jButtonCitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCitaActionPerformed
+    private void jButtonCita2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCita2ActionPerformed
 
-        GuiCitas citas = new GuiCitas();
-        citas.setVisible(true);
+        GuiPantalla pantalla = new GuiPantalla();
+        pantalla.setVisible(true);
         this.setVisible(false);
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonCitaActionPerformed
+    }//GEN-LAST:event_jButtonCita2ActionPerformed
+
+    private void jButtonCita1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCita1ActionPerformed
+
+        GuiPermisos permisos = new GuiPermisos();
+        permisos.setVisible(true);
+        this.setVisible(false);
+    }//GEN-LAST:event_jButtonCita1ActionPerformed
 
     private void jButtonPacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPacienteActionPerformed
 
@@ -266,38 +204,44 @@ public class GuiMenu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonPacienteActionPerformed
 
-    private void jButtonCita1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCita1ActionPerformed
-                
-        GuiPermisos permisos = new GuiPermisos();
-        permisos.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_jButtonCita1ActionPerformed
+    private void jButtonCitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCitaActionPerformed
 
-    private void jButtonCita2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCita2ActionPerformed
-                
-        GuiPantalla pantalla = new GuiPantalla();
-        pantalla.setVisible(true);
+        GuiCitas citas = new GuiCitas();
+        citas.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButtonCita2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonCitaActionPerformed
 
-    private void jButtonCita3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCita3ActionPerformed
-        
-        GuiExpediente expediente = new GuiExpediente();
-        expediente.setVisible(true);
-        this.setVisible(false);
-    }//GEN-LAST:event_jButtonCita3ActionPerformed
+    private void jButtonAsistenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAsistenteActionPerformed
 
-    private void jButtonCita4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCita4ActionPerformed
-        GuiEspecialidades especialidades = new GuiEspecialidades();
-        especialidades.setVisible(true);
+        GuiAsistente asistente = new GuiAsistente();
+        asistente.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButtonCita4ActionPerformed
 
-    private void jButtonPaciente1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonPaciente1ActionPerformed
-        GuiServicios servicios = new GuiServicios();
-        servicios.setVisible(true);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonAsistenteActionPerformed
+
+    private void jButtonUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonUsuarioActionPerformed
+
+        GuiUsuario usuario = new GuiUsuario();
+        usuario.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButtonPaciente1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonUsuarioActionPerformed
+
+    private void jButtonDoctorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonDoctorActionPerformed
+
+        GuiDoctor doctor = new GuiDoctor();
+        doctor.setVisible(true);
+        this.setVisible(false);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonDoctorActionPerformed
+
+    private void jButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirActionPerformed
+
+        System.exit(0);//Cerrar la ventana
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonSalirActionPerformed
 
     /**
      * @param args the command line arguments
@@ -336,10 +280,6 @@ public class GuiMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.ButtonGroup buttonGroup1;
-    private javax.swing.ButtonGroup buttonGroup2;
-    private javax.swing.ButtonGroup buttonGroup3;
-    private javax.swing.ButtonGroup buttonGroup4;
     private javax.swing.JButton jButtonAsistente;
     private javax.swing.JButton jButtonCita;
     private javax.swing.JButton jButtonCita1;
@@ -351,9 +291,7 @@ public class GuiMenu extends javax.swing.JFrame {
     private javax.swing.JButton jButtonPaciente1;
     private javax.swing.JButton jButtonSalir;
     private javax.swing.JButton jButtonUsuario;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JRadioButton jRadioButton7;
     // End of variables declaration//GEN-END:variables
 }

@@ -25,7 +25,7 @@ public class Progra4 {
         GuiMenu menu = new GuiMenu();
         GuiLogin login = new GuiLogin();
         //if (conect.connect()) {
-            login.setVisible(true);
+            menu.setVisible(true);
         //} else {
        // }
     }
