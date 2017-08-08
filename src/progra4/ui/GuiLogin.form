@@ -121,13 +121,13 @@
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-          <Font name="Bitsumishi" size="36" style="1"/>
+          <Font name="Dolce Vita Heavy" size="48" style="1"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Login"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="110" y="20" width="120" height="40"/>
+          <AbsoluteConstraints x="110" y="20" width="150" height="40"/>
         </Constraint>
       </Constraints>
     </Component>

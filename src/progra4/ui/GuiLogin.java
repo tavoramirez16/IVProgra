@@ -88,10 +88,10 @@ public class GuiLogin extends javax.swing.JFrame {
         getContentPane().add(jTextField2);
         jTextField2.setBounds(150, 140, 100, 20);
 
-        jLabel1.setFont(new java.awt.Font("Bitsumishi", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Dolce Vita Heavy", 1, 48)); // NOI18N
         jLabel1.setText("Login");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(110, 20, 120, 40);
+        jLabel1.setBounds(110, 20, 150, 40);
 
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/logo.jpg"))); // NOI18N
         jLabel4.setText("jLabel4");

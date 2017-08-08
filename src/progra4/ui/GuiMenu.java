@@ -43,18 +43,20 @@ public class GuiMenu extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(600, 410));
-        setMinimumSize(new java.awt.Dimension(600, 410));
+        setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
+        setMaximumSize(new java.awt.Dimension(590, 365));
+        setMinimumSize(new java.awt.Dimension(590, 365));
+        setName("FrameMenu"); // NOI18N
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(600, 410));
+        setPreferredSize(new java.awt.Dimension(590, 365));
         getContentPane().setLayout(null);
 
-        jLabel3.setFont(new java.awt.Font("Bitsumishi", 1, 36)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Dolce Vita Heavy", 1, 48)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 51));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("MENU");
+        jLabel3.setText("MENÚ");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(20, 20, 120, 40);
+        jLabel3.setBounds(10, 20, 150, 60);
 
         jButtonSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cerrar4-01.png"))); // NOI18N
         jButtonSalir.addActionListener(new java.awt.event.ActionListener() {
@@ -158,7 +160,7 @@ public class GuiMenu extends javax.swing.JFrame {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Clinica3-01.png"))); // NOI18N
         jLabel1.setText("jLabel1");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(0, 0, 610, 420);
+        jLabel1.setBounds(0, 0, 590, 370);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
