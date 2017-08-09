@@ -70,19 +70,16 @@ public class GuiAsistente extends javax.swing.JFrame {
         jLabel3.setBounds(20, 20, 230, 50);
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 0, 153));
         jLabel7.setText("Nombre");
         getContentPane().add(jLabel7);
         jLabel7.setBounds(20, 230, 70, 20);
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 153));
         jLabel5.setText("Identificación");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(20, 190, 90, 20);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 0, 153));
         jLabel8.setText("Teléfono");
         getContentPane().add(jLabel8);
         jLabel8.setBounds(20, 270, 70, 20);
@@ -151,7 +148,7 @@ public class GuiAsistente extends javax.swing.JFrame {
         getContentPane().add(jButtonMenu);
         jButtonMenu.setBounds(570, 50, 40, 40);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Uis2-01.png"))); // NOI18N
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Pantallas2-01.png"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(-6, -6, 630, 410);
 
