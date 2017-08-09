@@ -37,7 +37,7 @@ public class GuiMenu extends javax.swing.JFrame {
         jButtonPaciente = new javax.swing.JButton();
         jButtonCita1 = new javax.swing.JButton();
         jButtonCita2 = new javax.swing.JButton();
-        jButtonCita3 = new javax.swing.JButton();
+        jButtonExpediente = new javax.swing.JButton();
         jButtonCita4 = new javax.swing.JButton();
         jButtonPaciente1 = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
@@ -130,16 +130,16 @@ public class GuiMenu extends javax.swing.JFrame {
         getContentPane().add(jButtonCita2);
         jButtonCita2.setBounds(180, 90, 120, 23);
 
-        jButtonCita3.setText("Expedientes");
-        jButtonCita3.addActionListener(new java.awt.event.ActionListener() {
+        jButtonExpediente.setText("Expedientes");
+        jButtonExpediente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonCita3ActionPerformed(evt);
+                jButtonExpedienteActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonCita3);
-        jButtonCita3.setBounds(180, 130, 120, 23);
+        getContentPane().add(jButtonExpediente);
+        jButtonExpediente.setBounds(180, 130, 120, 23);
 
-        jButtonCita4.setText("Expecialidades");
+        jButtonCita4.setText("Especialidades");
         jButtonCita4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonCita4ActionPerformed(evt);
@@ -177,12 +177,12 @@ public class GuiMenu extends javax.swing.JFrame {
         this.setVisible(false);
     }//GEN-LAST:event_jButtonCita4ActionPerformed
 
-    private void jButtonCita3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCita3ActionPerformed
+    private void jButtonExpedienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonExpedienteActionPerformed
 
         GuiExpediente expediente = new GuiExpediente();
         expediente.setVisible(true);
         this.setVisible(false);
-    }//GEN-LAST:event_jButtonCita3ActionPerformed
+    }//GEN-LAST:event_jButtonExpedienteActionPerformed
 
     private void jButtonCita2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCita2ActionPerformed
 
@@ -286,9 +286,9 @@ public class GuiMenu extends javax.swing.JFrame {
     private javax.swing.JButton jButtonAsistente;
     private javax.swing.JButton jButtonCita1;
     private javax.swing.JButton jButtonCita2;
-    private javax.swing.JButton jButtonCita3;
     private javax.swing.JButton jButtonCita4;
     private javax.swing.JButton jButtonDoctor;
+    private javax.swing.JButton jButtonExpediente;
     private javax.swing.JButton jButtonPaciente;
     private javax.swing.JButton jButtonPaciente1;
     private javax.swing.JButton jButtonSalir;

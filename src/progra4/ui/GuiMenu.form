@@ -162,12 +162,12 @@
         </Constraint>
       </Constraints>
     </Component>
-    <Component class="javax.swing.JButton" name="jButtonCita3">
+    <Component class="javax.swing.JButton" name="jButtonExpediente">
       <Properties>
         <Property name="text" type="java.lang.String" value="Expedientes"/>
       </Properties>
       <Events>
-        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonCita3ActionPerformed"/>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonExpedienteActionPerformed"/>
       </Events>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -177,7 +177,7 @@
     </Component>
     <Component class="javax.swing.JButton" name="jButtonCita4">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Expecialidades"/>
+        <Property name="text" type="java.lang.String" value="Especialidades"/>
       </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonCita4ActionPerformed"/>
