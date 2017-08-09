@@ -149,7 +149,6 @@ public class GuiDoctor extends javax.swing.JFrame {
         jButtonBuscar.setBounds(530, 110, 40, 40);
 
         jButtonSalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Cerrar4-01.png"))); // NOI18N
-        jButtonSalir.setLabel("");
         jButtonSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonSalirActionPerformed(evt);
