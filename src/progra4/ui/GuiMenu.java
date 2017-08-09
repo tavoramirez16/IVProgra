@@ -33,7 +33,7 @@ public class GuiMenu extends javax.swing.JFrame {
         jButtonDoctor = new javax.swing.JButton();
         jButtonUsuario = new javax.swing.JButton();
         jButtonAsistente = new javax.swing.JButton();
-        jButtonCita = new javax.swing.JButton();
+        jButtonAgenda = new javax.swing.JButton();
         jButtonPaciente = new javax.swing.JButton();
         jButtonCita1 = new javax.swing.JButton();
         jButtonCita2 = new javax.swing.JButton();
@@ -94,14 +94,14 @@ public class GuiMenu extends javax.swing.JFrame {
         getContentPane().add(jButtonAsistente);
         jButtonAsistente.setBounds(30, 90, 100, 23);
 
-        jButtonCita.setText("Citas");
-        jButtonCita.addActionListener(new java.awt.event.ActionListener() {
+        jButtonAgenda.setText("Agenda");
+        jButtonAgenda.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonCitaActionPerformed(evt);
+                jButtonAgendaActionPerformed(evt);
             }
         });
-        getContentPane().add(jButtonCita);
-        jButtonCita.setBounds(180, 250, 120, 23);
+        getContentPane().add(jButtonAgenda);
+        jButtonAgenda.setBounds(180, 250, 120, 23);
 
         jButtonPaciente.setText("Pacientes");
         jButtonPaciente.addActionListener(new java.awt.event.ActionListener() {
@@ -206,13 +206,13 @@ public class GuiMenu extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonPacienteActionPerformed
 
-    private void jButtonCitaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonCitaActionPerformed
+    private void jButtonAgendaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAgendaActionPerformed
 
-        GuiCitas citas = new GuiCitas();
+        GuiAgenda citas = new GuiAgenda();
         citas.setVisible(true);
         this.setVisible(false);
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonCitaActionPerformed
+    }//GEN-LAST:event_jButtonAgendaActionPerformed
 
     private void jButtonAsistenteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonAsistenteActionPerformed
 
@@ -282,8 +282,8 @@ public class GuiMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonAgenda;
     private javax.swing.JButton jButtonAsistente;
-    private javax.swing.JButton jButtonCita;
     private javax.swing.JButton jButtonCita1;
     private javax.swing.JButton jButtonCita2;
     private javax.swing.JButton jButtonCita3;
