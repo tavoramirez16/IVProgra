@@ -99,7 +99,7 @@ public class GuiAgenda extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButtonGuardar);
-        jButtonGuardar.setBounds(250, 300, 40, 40);
+        jButtonGuardar.setBounds(250, 310, 40, 40);
         getContentPane().add(jTextFieldNota);
         jTextFieldNota.setBounds(60, 270, 230, 20);
         getContentPane().add(jTextFieldAsistente);
@@ -139,13 +139,13 @@ public class GuiAgenda extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Dolce Vita Heavy", 0, 24)); // NOI18N
         jLabel4.setText("Consultar");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(310, 70, 130, 40);
+        jLabel4.setBounds(310, 80, 130, 40);
 
-        jLabel3.setFont(new java.awt.Font("Dolce Vita", 1, 48)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Dolce Vita Heavy", 1, 48)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 51));
         jLabel3.setText("AGENDA");
         getContentPane().add(jLabel3);
-        jLabel3.setBounds(40, 30, 180, 50);
+        jLabel3.setBounds(20, 20, 180, 50);
 
         jLabel1.setFont(new java.awt.Font("Dolce Vita Heavy", 0, 24)); // NOI18N
         jLabel1.setText("Ingresar");

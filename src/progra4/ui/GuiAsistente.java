@@ -103,7 +103,7 @@ public class GuiAsistente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jButtonGuardar);
-        jButtonGuardar.setBounds(250, 300, 40, 40);
+        jButtonGuardar.setBounds(250, 310, 40, 40);
 
         jComboBoxBusqueda.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         jComboBoxBusqueda.addActionListener(new java.awt.event.ActionListener() {
