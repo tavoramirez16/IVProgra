@@ -19,7 +19,7 @@ public class GuiExpediente extends javax.swing.JFrame {
 
     public GuiExpediente() {
         initComponents();
-        //imprimirselect();
+        imprimirselect();
         this.setLocationRelativeTo(null);
 
     }

@@ -20,9 +20,7 @@ public class GuiPaciente extends javax.swing.JFrame {
     public GuiPaciente() {
         initComponents();
         this.setLocationRelativeTo(null);
-        //imprimirselect();
-
-        //imprimirselect();
+        imprimirselect();
     }
 
     /**
@@ -55,6 +53,7 @@ public class GuiPaciente extends javax.swing.JFrame {
         jLabelMensaje = new javax.swing.JLabel();
         jComboBoxTipoSangre = new javax.swing.JComboBox<>();
         jComboBoxId = new javax.swing.JComboBox<>();
+        jButton1 = new javax.swing.JButton();
         jLabel7 = new javax.swing.JLabel();
         jTextFieldfitro = new javax.swing.JTextField();
 
@@ -168,7 +167,7 @@ public class GuiPaciente extends javax.swing.JFrame {
 
         jLabelMensaje.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         getContentPane().add(jLabelMensaje);
-        jLabelMensaje.setBounds(0, 0, 0, 0);
+        jLabelMensaje.setBounds(380, 260, 160, 40);
 
         jComboBoxTipoSangre.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jComboBoxTipoSangre.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "A+", "A-", "B+", "B-", "AB+", "AB-", "O+", "O-" }));
@@ -187,6 +186,15 @@ public class GuiPaciente extends javax.swing.JFrame {
         });
         getContentPane().add(jComboBoxId);
         jComboBoxId.setBounds(280, 160, 210, 30);
+
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Borrar-01.png"))); // NOI18N
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1);
+        jButton1.setBounds(330, 260, 40, 40);
 
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Pantallas2-01.png"))); // NOI18N
         getContentPane().add(jLabel7);
@@ -210,6 +218,7 @@ public class GuiPaciente extends javax.swing.JFrame {
 
     private void jButtonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGuardarActionPerformed
 
+        jLabelMensaje.setText("");
         String id = jTextFieldIdentificacion.getText();
         String nombre = jTextFieldNombrePaciente.getText();
         String telefono = jTextFieldTelefono.getText();
@@ -258,6 +267,7 @@ public class GuiPaciente extends javax.swing.JFrame {
 
     private void jButtonBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBuscarActionPerformed
         //String select = (String) jTextFieldIdentificacion.getText();
+        jLabelMensaje.setText("");
         String id = (String) jComboBoxId.getSelectedItem();
         String nombre = null;
         String telefono = null;
@@ -319,6 +329,23 @@ public class GuiPaciente extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonMenuActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    
+        String select = (String) jComboBoxId.getSelectedItem();
+        String[] partes = select.split("-");
+        String id = partes[0];
+        String condicion = "idPaciente->" + id;
+        boolean respuesta = paciente.eliminar(condicion);
+        if (respuesta) {
+            jLabelMensaje.setText("Eliminado Correctamente");
+            imprimirselect();
+        } else {
+            jLabelMensaje.setText("Error eliminando");
+        }
+        limpiar();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
     /**
      * @param args the command line arguments
      */
@@ -358,6 +385,7 @@ public class GuiPaciente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButton1;
     private javax.swing.JButton jButtonBuscar;
     private javax.swing.JButton jButtonGuardar;
     private javax.swing.JButton jButtonMenu;

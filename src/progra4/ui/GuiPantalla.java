@@ -18,7 +18,7 @@ public class GuiPantalla extends javax.swing.JFrame {
     public GuiPantalla() {
         initComponents();
         this.setLocationRelativeTo(null);
-        //imprimirselect();
+        imprimirselect();
     }
 
     /**
