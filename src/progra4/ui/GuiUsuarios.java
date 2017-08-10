@@ -9,12 +9,12 @@ package progra4.ui;
  *
  * @author jmanu
  */
-public class GuiPermisos extends javax.swing.JFrame {
+public class GuiUsuarios extends javax.swing.JFrame {
 
     /**
      * Creates new form GuiPermisos
      */
-    public GuiPermisos() {
+    public GuiUsuarios() {
         initComponents();
         this.setLocationRelativeTo(null);
     }
@@ -49,10 +49,8 @@ public class GuiPermisos extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setMaximumSize(new java.awt.Dimension(620, 390));
         setMinimumSize(new java.awt.Dimension(620, 390));
         setUndecorated(true);
-        setPreferredSize(new java.awt.Dimension(620, 390));
         getContentPane().setLayout(null);
 
         jLabel1.setFont(new java.awt.Font("Dolce Vita Heavy", 1, 24)); // NOI18N
@@ -62,7 +60,7 @@ public class GuiPermisos extends javax.swing.JFrame {
 
         jLabel3.setFont(new java.awt.Font("Dolce Vita Heavy", 1, 48)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 51));
-        jLabel3.setText("permisos");
+        jLabel3.setText("Usuarios");
         getContentPane().add(jLabel3);
         jLabel3.setBounds(20, 20, 220, 56);
 
@@ -212,20 +210,21 @@ public class GuiPermisos extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(GuiPermisos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GuiUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(GuiPermisos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GuiUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(GuiPermisos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GuiUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(GuiPermisos.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(GuiUsuarios.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new GuiPermisos().setVisible(true);
+                new GuiUsuarios().setVisible(true);
             }
         });
     }

@@ -225,7 +225,7 @@ public class GuiMenu extends javax.swing.JFrame {
 
     private void jButtonUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonUsuarioActionPerformed
 
-        GuiUsuario usuario = new GuiUsuario();
+        GuiUsuarios usuario = new GuiUsuarios();
         usuario.setVisible(true);
         this.setVisible(false);
         // TODO add your handling code here:
