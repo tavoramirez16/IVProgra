@@ -133,7 +133,6 @@ public class GuiEspecialidades extends javax.swing.JFrame {
         });
         getContentPane().add(jButtonSalir);
         jButtonSalir.setBounds(570, 10, 40, 40);
-        jButtonSalir.getAccessibleContext().setAccessibleName("");
 
         jButtonMenu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Menú2-01.png"))); // NOI18N
         jButtonMenu.addActionListener(new java.awt.event.ActionListener() {
