@@ -53,55 +53,36 @@ public class CatalogoUsuario {
         this.passwordUser = passwordUser;
     }//fin metodo setPasswordUser
     
+String tabla = "Usuarios";
+    
    /*metodo para agregar un doctor*/
-     public boolean agregar(){
+     public boolean agregar(String datos){
         boolean agregado = false;
-        idUsuario= 0;
-        codigoUsuario= 0;
-        usuario= "";
-        passwordUser = "";
-        String tabla = "Usuario";
-        String datos = "idUsuario->'"+idUsuario+"', codigoUsuario->'"+codigoUsuario+"',"
-                + "usuario->'"+usuario+", passwordUser->'"+passwordUser+"'";
         if(conect.agregar(tabla,datos)){
             agregado = true;
         }//fin del if
         return agregado;
     }//fin metodo agregar
     /*metodo para editar algun dato de un doctor*/
-    public boolean editar(){
+    public boolean editar(String datos, String condicion){
         boolean editado = false;
-        passwordUser = "";
-        String tabla = "Usuarios";
-        String datos = "password->'"+passwordUser+"'";
-        String condicion = "idUsuario->5";
         if(conect.editar(tabla,datos,condicion)){
             editado = true;
         }//fin del if
         return editado;
     }//fin metodo editar   
     /*metodo para eliminar un doctor*/
-    public boolean eliminar(){
+    public boolean eliminar(String condicion){
         boolean eliminado = false;
-        String tabla = "Usuarios";
-        String condicion = "idUsuario->3";
         if(conect.eliminar(tabla,condicion)){
             eliminado = true;
         }//fin del if
         return eliminado;
     }//fin metodo eliminar   
     /*metodo para imprimir todos los doctores*/
-    public void imprimir(){
-        String tabla = "Usuarios";
-        String datos = "*";
-        String condicion = null;
-        String order = null;
-        String [][] resultado = conect.imprimir(tabla,datos,condicion,order);
-        for (int x=0; x < resultado.length; x++) {
-            for (int y=0; y < resultado[x].length; y++) {
-              System.out.println (resultado[x][y]);
-            }//fin for interno
-        }//fin for
+    public String [][] imprimir(String datos, String condicion, String order){
+        String [][] resultado = conect.imprimir(tabla,datos,condicion, order);
+        return resultado;
     }//fin metodo imprimir
 
 }//fin clase CatalogoUsuario
