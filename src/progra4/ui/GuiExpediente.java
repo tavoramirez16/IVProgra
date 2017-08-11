@@ -239,7 +239,8 @@ public class GuiExpediente extends javax.swing.JFrame {
 
     private void jButtonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGuardarActionPerformed
 
-        
+        jLabelMensaje.setText("");
+
         String id = (String) jComboBoxidE.getSelectedItem();
         String idE = jTextFieldNExpediente.getText();
         String fecha = jTextFieldFechaExpediente.getText();
@@ -278,6 +279,22 @@ public class GuiExpediente extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonSalirActionPerformed
 
     private void jTextFieldNExpedienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNExpedienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldNExpedienteActionPerformed
+
+    private void jTextFieldFechaExpedienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldFechaExpedienteActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jTextFieldFechaExpedienteActionPerformed
+
+    private void jButtonMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMenuActionPerformed
+
+        GuiMenu menu = new GuiMenu();
+        menu.setVisible(true);
+        this.setVisible(false);
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonMenuActionPerformed
+
+    private void jButtonBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBuscarActionPerformed
 
         jLabelMensaje.setText("");
 
@@ -310,23 +327,7 @@ public class GuiExpediente extends javax.swing.JFrame {
         jTextFieldOtros.setText(otros);
 
         limpiar();
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldNExpedienteActionPerformed
 
-    private void jTextFieldFechaExpedienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldFechaExpedienteActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jTextFieldFechaExpedienteActionPerformed
-
-    private void jButtonMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMenuActionPerformed
-
-        GuiMenu menu = new GuiMenu();
-        menu.setVisible(true);
-        this.setVisible(false);
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonMenuActionPerformed
-
-    private void jButtonBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBuscarActionPerformed
-        // TODO add your handling code here:
     }//GEN-LAST:event_jButtonBuscarActionPerformed
 
     private void jComboBoxidEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxidEActionPerformed
@@ -336,6 +337,7 @@ public class GuiExpediente extends javax.swing.JFrame {
     private void jButtonBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBorrarActionPerformed
 
         jLabelMensaje.setText("");
+
         String select = (String) jComboBoxidE.getSelectedItem();
         String[] partes = select.split("-");
         String id = partes[0];
