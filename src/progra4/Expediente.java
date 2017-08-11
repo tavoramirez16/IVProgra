@@ -19,7 +19,7 @@ public class Expediente {
     public Expediente() {
     }
 
-    private String tabla = "Pacientes";//tabla en la base datos
+    private String tabla = "Expediente";//tabla en la base datos
 
     public boolean agregar(String datos) {
         boolean agregado = false;//bandera para controlar la inserción de datos

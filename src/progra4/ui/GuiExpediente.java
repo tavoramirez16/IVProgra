@@ -47,12 +47,12 @@ public class GuiExpediente extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabelMensaje = new javax.swing.JLabel();
         jButtonBuscar = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
-        jTextFieldNombreExpediente = new javax.swing.JTextField();
+        jButtonBorrar = new javax.swing.JButton();
         jButtonGuardar = new javax.swing.JButton();
         jButtonSalir = new javax.swing.JButton();
         jButtonMenu = new javax.swing.JButton();
@@ -69,13 +69,11 @@ public class GuiExpediente extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jScrollPane3 = new javax.swing.JScrollPane();
         jTextAreaAntecedentes = new javax.swing.JTextArea();
-        jLabel11 = new javax.swing.JLabel();
-        jScrollPane4 = new javax.swing.JScrollPane();
-        jTextAreaComentarios = new javax.swing.JTextArea();
         jLabel12 = new javax.swing.JLabel();
         jTextFieldOtros = new javax.swing.JTextField();
         jComboBoxidE = new javax.swing.JComboBox<>();
-        jLabel13 = new javax.swing.JLabel();
+        jTextFieldfitro = new javax.swing.JLabel();
+        jTextField1 = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(620, 470));
@@ -83,6 +81,10 @@ public class GuiExpediente extends javax.swing.JFrame {
         setUndecorated(true);
         setPreferredSize(new java.awt.Dimension(620, 470));
         getContentPane().setLayout(null);
+
+        jLabelMensaje.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        getContentPane().add(jLabelMensaje);
+        jLabelMensaje.setBounds(50, 120, 210, 30);
 
         jButtonBuscar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Buscar-01.png"))); // NOI18N
         jButtonBuscar.addActionListener(new java.awt.event.ActionListener() {
@@ -103,15 +105,17 @@ public class GuiExpediente extends javax.swing.JFrame {
         jLabel5.setText("Identificación");
         getContentPane().add(jLabel5);
         jLabel5.setBounds(50, 90, 90, 15);
-
-        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel6.setText("Nombre");
-        getContentPane().add(jLabel6);
-        jLabel6.setBounds(50, 120, 60, 15);
         getContentPane().add(jLabel9);
         jLabel9.setBounds(10, 400, 20, 20);
-        getContentPane().add(jTextFieldNombreExpediente);
-        jTextFieldNombreExpediente.setBounds(110, 120, 150, 20);
+
+        jButtonBorrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Borrar-01.png"))); // NOI18N
+        jButtonBorrar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonBorrarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButtonBorrar);
+        jButtonBorrar.setBounds(570, 170, 40, 40);
 
         jButtonGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Guardar-01.png"))); // NOI18N
         jButtonGuardar.addActionListener(new java.awt.event.ActionListener() {
@@ -169,14 +173,14 @@ public class GuiExpediente extends javax.swing.JFrame {
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("Tratamiento");
         getContentPane().add(jLabel4);
-        jLabel4.setBounds(310, 290, 90, 15);
+        jLabel4.setBounds(50, 290, 90, 15);
 
         jTextAreaTratamiento.setColumns(20);
         jTextAreaTratamiento.setRows(5);
         jScrollPane1.setViewportView(jTextAreaTratamiento);
 
         getContentPane().add(jScrollPane1);
-        jScrollPane1.setBounds(310, 310, 250, 100);
+        jScrollPane1.setBounds(50, 310, 250, 100);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setText("Alergias");
@@ -206,42 +210,64 @@ public class GuiExpediente extends javax.swing.JFrame {
         getContentPane().add(jScrollPane3);
         jScrollPane3.setBounds(50, 180, 250, 100);
 
-        jLabel11.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
-        jLabel11.setText("Comentarios");
-        getContentPane().add(jLabel11);
-        jLabel11.setBounds(50, 290, 80, 15);
-
-        jTextAreaComentarios.setColumns(20);
-        jTextAreaComentarios.setRows(5);
-        jTextAreaComentarios.setMaximumSize(new java.awt.Dimension(250, 100));
-        jTextAreaComentarios.setMinimumSize(new java.awt.Dimension(250, 100));
-        jScrollPane4.setViewportView(jTextAreaComentarios);
-
-        getContentPane().add(jScrollPane4);
-        jScrollPane4.setBounds(50, 310, 250, 100);
-
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel12.setText("Otros");
         getContentPane().add(jLabel12);
-        jLabel12.setBounds(50, 420, 40, 15);
+        jLabel12.setBounds(310, 290, 40, 15);
         getContentPane().add(jTextFieldOtros);
-        jTextFieldOtros.setBounds(90, 420, 470, 20);
+        jTextFieldOtros.setBounds(310, 310, 250, 20);
 
+        jComboBoxidE.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
+        jComboBoxidE.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBoxidEActionPerformed(evt);
+            }
+        });
         getContentPane().add(jComboBoxidE);
         jComboBoxidE.setBounds(140, 90, 120, 20);
 
-        jLabel13.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Pantallas3-01.png"))); // NOI18N
-        getContentPane().add(jLabel13);
-        jLabel13.setBounds(0, 0, 630, 480);
+        jTextFieldfitro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Pantallas3-01.png"))); // NOI18N
+        getContentPane().add(jTextFieldfitro);
+        jTextFieldfitro.setBounds(0, 0, 630, 480);
+
+        jTextField1.setText("jTextField1");
+        getContentPane().add(jTextField1);
+        jTextField1.setBounds(560, 230, 59, 20);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGuardarActionPerformed
 
-        GuiMenu menu = new GuiMenu();
-        menu.setVisible(true);
-        this.setVisible(false);
+        
+        String id = (String) jComboBoxidE.getSelectedItem();
+        String idE = jTextFieldNExpediente.getText();
+        String fecha = jTextFieldFechaExpediente.getText();
+        String antecedentes = jTextAreaAntecedentes.getText();
+        String tratamiento = jTextAreaTratamiento.getText();
+        String alergias = jTextAreaTratamiento.getText();
+        String otros = jTextFieldOtros.getText();
+        String data = "idPaciente->'" + id + "',"
+                + "idExpediente->'" + idE + "',"
+                + "Fecha->'" + fecha + "',"
+                + "Antecedentes->'" + antecedentes + "',"
+                + "Tratamiento->'" + tratamiento + "',"
+                + "Alergias->'" + alergias + "',"
+                + "Otros->'" + otros + "',";
+        String condicion = "idPaciente->" + id;
+        boolean respuesta;
+        if (jTextFieldfitro.getText().length() == 0) {
+            respuesta = paciente.agregar(data);
+        } else {
+            respuesta = paciente.editar(data, condicion);
+        }
+        if (respuesta) {
+            jLabelMensaje.setText("Guardado Correctamente");
+        } else {
+            jLabelMensaje.setText("Error Guardado");
+        }
+
+        //limpiar(); 
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonGuardarActionPerformed
 
@@ -252,6 +278,38 @@ public class GuiExpediente extends javax.swing.JFrame {
     }//GEN-LAST:event_jButtonSalirActionPerformed
 
     private void jTextFieldNExpedienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldNExpedienteActionPerformed
+
+        jLabelMensaje.setText("");
+
+        String id = (String) jComboBoxidE.getSelectedItem();
+        String idE = null;
+        String fecha = null;
+        String antecedentes = null;
+        String tratamiento = null;
+        String alergias = null;
+        String otros = null;
+        String data = "*";
+        String condicion = "idPaciente->" + id;
+        String order = "idPaciente->ASC";
+        String[][] resultado = paciente.imprimir(data, condicion, order);
+        for (int x = 0; x < resultado.length; x++) {
+            idE = resultado[x][0];
+            id = resultado[x][1];
+            fecha = resultado[x][2];
+            antecedentes = resultado[x][3];
+            tratamiento = resultado[x][4];
+            alergias = resultado[x][5];
+            otros = resultado[x][6];
+        }
+        //jTextFieldIdentificacion.setText(id);
+        jTextFieldNExpediente.setText(idE);
+        jTextFieldFechaExpediente.setText(fecha);
+        jTextAreaAntecedentes.setText(antecedentes);
+        jTextAreaTratamiento.setText(tratamiento);
+        jTextAreaAlergias.setText(alergias);
+        jTextFieldOtros.setText(otros);
+
+        limpiar();
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldNExpedienteActionPerformed
 
@@ -270,6 +328,42 @@ public class GuiExpediente extends javax.swing.JFrame {
     private void jButtonBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBuscarActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonBuscarActionPerformed
+
+    private void jComboBoxidEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBoxidEActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBoxidEActionPerformed
+
+    private void jButtonBorrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBorrarActionPerformed
+
+        jLabelMensaje.setText("");
+        String select = (String) jComboBoxidE.getSelectedItem();
+        String[] partes = select.split("-");
+        String id = partes[0];
+        String condicion = "idPaciente->" + id;
+        boolean respuesta = paciente.eliminar(condicion);
+        if (respuesta) {
+            jLabelMensaje.setText("Eliminado Correctamente");
+            imprimirselect();
+        } else {
+            jLabelMensaje.setText("Error eliminando");
+        }
+
+        limpiar();
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButtonBorrarActionPerformed
+
+    private void limpiar() {
+
+        jTextFieldFechaExpediente.setText("");
+        jTextFieldNExpediente.setText("");
+        jTextFieldOtros.setText("");
+        jTextAreaAlergias.setText("");
+        jTextAreaAntecedentes.setText("");
+        jTextAreaTratamiento.setText("");
+        jTextFieldOtros.setText("");
+        jComboBoxidE.setSelectedItem("");
+        jTextFieldfitro.setText("");
+    }
 
     /**
      * @param args the command line arguments
@@ -314,6 +408,7 @@ public class GuiExpediente extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton jButtonBorrar;
     private javax.swing.JButton jButtonBuscar;
     private javax.swing.JButton jButtonGuardar;
     private javax.swing.JButton jButtonMenu;
@@ -321,27 +416,24 @@ public class GuiExpediente extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> jComboBoxidE;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
-    private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
-    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelMensaje;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JScrollPane jScrollPane4;
     private javax.swing.JTextArea jTextAreaAlergias;
     private javax.swing.JTextArea jTextAreaAntecedentes;
-    private javax.swing.JTextArea jTextAreaComentarios;
     private javax.swing.JTextArea jTextAreaTratamiento;
+    private javax.swing.JTextField jTextField1;
     private javax.swing.JTextField jTextFieldFechaExpediente;
     private javax.swing.JTextField jTextFieldNExpediente;
-    private javax.swing.JTextField jTextFieldNombreExpediente;
     private javax.swing.JTextField jTextFieldOtros;
+    private javax.swing.JLabel jTextFieldfitro;
     // End of variables declaration//GEN-END:variables
 }
