@@ -29,9 +29,9 @@ public class Citas {
     Procedimiento de edición de datos
     */    
     public boolean editar(String datos, String condicion){
-        boolean editado = false;
+        boolean editado = false;//bandera para controlar la edición
         if(conect.editar(tabla,datos,condicion)){
-            editado = true;
+            editado = true;//bandera para controlar la edición
         }
         return editado;
     }
@@ -40,9 +40,9 @@ public class Citas {
     Procedimiento de eliminicación de datos.
     */    
     public boolean eliminar(String condicion){
-        boolean eliminado = false;
+        boolean eliminado = false;//bandera para controlar la eliminación
         if(conect.eliminar(tabla,condicion)){
-            eliminado = true;
+            eliminado = true;//bandera para controlar la eliminación
         }
         return eliminado;
     }
@@ -52,6 +52,7 @@ public class Citas {
     */
     
     public String [][] imprimir(String datos, String condicion, String order){
+        //Conexión a base de datos para la impresión de datos
         String [][] resultado = conect.imprimir(tabla,datos,condicion,order);
         for (int x=0; x < resultado.length; x++) {
             for (int y=0; y < resultado[x].length; y++) {
