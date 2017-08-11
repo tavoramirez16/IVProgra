@@ -34,7 +34,7 @@ public class GuiDoctor extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel( );
+        jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jTextFieldIdentificacion = new javax.swing.JTextField();
@@ -50,6 +50,7 @@ public class GuiDoctor extends javax.swing.JFrame {
         jScrollPane1 = new javax.swing.JScrollPane();
         jTextArea = new javax.swing.JTextArea();
         jLabel2 = new javax.swing.JLabel();
+        jLabelESTADO = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(620, 390));
@@ -176,6 +177,10 @@ public class GuiDoctor extends javax.swing.JFrame {
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Pantallas2-01.png"))); // NOI18N
         getContentPane().add(jLabel2);
         jLabel2.setBounds(0, 0, 620, 400);
+
+        jLabelESTADO.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        getContentPane().add(jLabelESTADO);
+        jLabelESTADO.setBounds(20, 310, 220, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -307,6 +312,7 @@ public class GuiDoctor extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelESTADO;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea;
     private javax.swing.JTextField jTextFieldCorreo;
