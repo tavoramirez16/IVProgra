@@ -5,6 +5,8 @@
  */
 package progra4.ui;
 
+import progra4.AsistenteDoctor;
+
 /**
  *
  * @author yoorda
@@ -14,6 +16,7 @@ public class GuiAsistente extends javax.swing.JFrame {
     /**
      * Creates new form GuiDoctor
      */
+    AsistenteDoctor asistente = new AsistenteDoctor();
     public GuiAsistente() {
         initComponents();
         this.setLocationRelativeTo(null);
@@ -90,11 +93,11 @@ public class GuiAsistente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextFieldIdentificacion);
-        jTextFieldIdentificacion.setBounds(120, 190, 170, 20);
+        jTextFieldIdentificacion.setBounds(120, 190, 170, 22);
         getContentPane().add(jTextFieldNombre);
-        jTextFieldNombre.setBounds(90, 230, 200, 20);
+        jTextFieldNombre.setBounds(90, 230, 200, 22);
         getContentPane().add(jTextFieldTelefono);
-        jTextFieldTelefono.setBounds(90, 270, 200, 20);
+        jTextFieldTelefono.setBounds(90, 270, 200, 22);
 
         jButtonGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Guardar-01.png"))); // NOI18N
         jButtonGuardar.addActionListener(new java.awt.event.ActionListener() {
