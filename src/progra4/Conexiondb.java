@@ -35,9 +35,9 @@ public class Conexiondb {
             coneccion = true;
         }catch(SQLException e){
             System.out.println(e.getMessage());
-        }
+        }//fin catch
         return coneccion;
-    }
+    }//fin connect
      /* 
     HBenavides 10/08/2017
     Método que agrega información a la base datos.
@@ -53,15 +53,15 @@ public class Conexiondb {
               if( y != 0){
                   campos = campos+" , ";
                   valores = valores+" , ";
-              }
+              }//fin if
               String[] parte2= parte1[y].split("->");
               campos = campos +" "+parte2[0];
               valores = valores +" "+parte2[1];
-            }
+            }//fin for
         }else{
             campos = "";
             valores = "";
-        }
+        }//fin else
         String query = "INSERT INTO "+tabla+" ("+campos+") VALUES ("+valores+")";
         System.out.println(query);
         try(Connection connection = DriverManager.getConnection(url,user,pass)){
@@ -70,9 +70,9 @@ public class Conexiondb {
             agregado = true;
         }catch(SQLException e){
             System.out.println(e.getMessage());
-        }
+        }//fin catch
         return agregado;
-    }
+    }//fin agregar
      /* 
     HBenavides 10/08/2017
     Método de modificación de datos.
@@ -83,7 +83,7 @@ public class Conexiondb {
         String condiciondata = datos(condicion);
         if(condiciondata != ""){
             condicion = " where "+condiciondata; 
-        }
+        }//fin if
         String query = "UPDATE "+tabla+" SET "+datos+""+condicion;
         System.out.println(query);
         try(Connection connection = DriverManager.getConnection(url,user,pass)){
@@ -92,9 +92,9 @@ public class Conexiondb {
             editar = true;
         }catch(SQLException e){
             System.out.println(e.getMessage());
-        }
+        }//fin catch
         return editar;
-    }
+    }//fin clase editar
      /* 
     HBenavides 10/08/2017
     Método que toma la data y la prepara para ser enviada a mostrar en las pantallas.
@@ -105,7 +105,7 @@ public class Conexiondb {
         String condiciondata = datos(condicion);
         if(condiciondata != ""){
             condicion = " where "+condiciondata; 
-        }
+        }//fin if
         String query = "DELETE FROM "+tabla+""+condicion;
         System.out.println(query);
         try(Connection connection = DriverManager.getConnection(url,user,pass)){
@@ -116,7 +116,7 @@ public class Conexiondb {
             System.out.println(e.getMessage());
         }
         return eliminar;
-    }
+    }//fin clase eliminar
     
     public String [][] imprimir(String tabla, String datos, String condicion,  String order){
         ResultSet r = null;
@@ -126,12 +126,12 @@ public class Conexiondb {
             condicion = " where "+condiciondata; 
         }else{
             condicion = "";
-        }
+        }//fin else
         String[] partes = order.split("->");
         String orderby = "";
         if(order != null){
             orderby = " ORDER BY "+partes[0]+" "+partes[1];
-        }
+        }//fin if
         String query = "SELECT "+datos+" FROM "+tabla+""+condicion+""+orderby;
         try(Connection connection = DriverManager.getConnection(url,user,pass)){
             s = connection.createStatement();
@@ -158,14 +158,12 @@ public class Conexiondb {
                        k++;
                    }
                 }
-            }
-            
-            
+            }               
         }catch(SQLException e){
             System.out.println(e.getMessage());
-        }
+        }//fin catch
         return resultado;
-    }
+    }//fin clase imprimir
     private String datos(String data){
         String datos = "";
         if(data != null){
@@ -179,7 +177,7 @@ public class Conexiondb {
              } 
         }else{
             datos = "";
-        }
+        }//fin del else
         return datos;
-    }
-}
+    }//fin metodo datos
+}//fin clase conexion
