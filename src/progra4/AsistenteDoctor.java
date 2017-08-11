@@ -15,9 +15,9 @@ public class AsistenteDoctor {
     private String nombre;//Nombre del asistente del doctor tipo caracter
     private String telefono;//Telefono del asistente del doctor tipo caracter
     Conexiondb conect = new Conexiondb();
-    
+    String tabla = "Asistentes";
     //metodo constructor
-    AsistenteDoctor(){}
+    public AsistenteDoctor(){}
     
     /*Get y Set de los datos*/
     //metodo que devuelve un entero de la identificación del asistente del doctor
