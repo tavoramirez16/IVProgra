@@ -156,13 +156,67 @@ public class GuiAsistente extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jButtonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGuardarActionPerformed
-        // TODO add your handling code here:
+        // yoorda
+        String id= jTextFieldIdentificacion.getText();
+      String nombre= jTextFieldNombre.getText();
+      String telefono= jTextFieldTelefono.getText();
+    
+        String datos = "nombre->'"+nombre+"', telefono->'"+telefono+"'";
+        String condicion= "idAsistente->'"+id;
+        boolean respuesta;
+        if(jTextFieldIdentificacion.getText().length()==0){
+            respuesta = asistente.agregar(datos);
+        }
+        else{
+            respuesta = asistente.editar(datos, condicion);
+        }
+        if(respuesta){
+            jLabelESTADO.setText("Guardado Correctamente");
+            imprimirselect();
+            limpiar();
+        }else{
+            jLabelESTADO.setText("Error al Guardar");
+        }
     }//GEN-LAST:event_jButtonGuardarActionPerformed
 
+     private void imprimirselect(){
+        int itemCount = jComboBoxBusqueda.getItemCount();
+        for(int i=0;i<itemCount;i++){
+            jComboBoxBusqueda.removeItemAt(0);
+         }
+        String data = "idAsistente, nombre";
+        String condicion = null;
+        String order = "idAsistente->ASC";
+        String[][] resultado = asistente.imprimir(data, condicion, order);
+        for (int x=0; x < resultado.length; x++) {
+             jComboBoxBusqueda.addItem(resultado[x][0]+" - "+resultado[x][1]);
+        }
+    }
+    
     private void jButtonBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBuscarActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButtonBuscarActionPerformed
+        // yoorda
+        String select = (String) jComboBoxBusqueda.getSelectedItem();
+        String[] partes = select.split(" - ");
+        String id = partes[0];
+        String nombre = partes[1];
+        String telefono = null;
+        String data = "telefono";
+        String condicion = "idAsistente->"+id;
+        String order = "idAsistente->ASC";
+        String[][] resultado = asistente.imprimir(data, condicion, order);
+            for (int x=0; x < resultado.length; x++) {
+                 telefono = resultado[x][0];
+            }
+            jTextFieldIdentificacion.setText(id);
+            jTextFieldNombre.setText(nombre);
+            jTextFieldTelefono.setText(telefono);
+        }//GEN-LAST:event_jButtonBuscarActionPerformed
 
+        private void limpiar(){
+            jTextFieldIdentificacion.setText("");
+            jTextFieldNombre.setText("");
+            jTextFieldTelefono.setText("");
+    }
     private void jTextFieldIdentificacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIdentificacionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldIdentificacionActionPerformed
