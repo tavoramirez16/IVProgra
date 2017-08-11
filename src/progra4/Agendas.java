@@ -14,7 +14,7 @@ public class Agendas {
     
     Agendas() {
     }
-    
+     
     private String tabla = "Citas";
     public boolean agregar(String datos){
         boolean agregado = false;
