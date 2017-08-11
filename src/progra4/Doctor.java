@@ -1,5 +1,5 @@
     /* 
-    HBenavides 10/08/2017
+    Yoorda 10/08/2017
     Clase Doctor, Catalogo de doctores que están registrados en el sistema.
     */
 package progra4;
@@ -19,6 +19,9 @@ public class Doctor {
     //metodo constructor
     Doctor(){}
 
+    /* 
+    Yoorda 10/08/2017
+    */
     /*Get y Set de los datos*/
     //metodo que devuelve entero la identificación del doctorentero
     public int getIdDoctor() {
