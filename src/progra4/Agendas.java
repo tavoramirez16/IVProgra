@@ -39,7 +39,7 @@ public class Agendas {
         }
         return eliminado;
     }
-    
+    /* procedimiento para imprimir la información*/
     public String [][] imprimir(String datos, String condicion, String order){
         String [][] resultado = conect.imprimir(tabla,datos,condicion,order);
         for (int x=0; x < resultado.length; x++) {
