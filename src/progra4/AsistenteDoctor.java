@@ -1,8 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+    /* 
+    HBenavides 10/08/2017
+    Clase Asistentes, encargada del catalogo de los asistentes por doctores
+    en la clinica
+    */
 package progra4;
 
 /**

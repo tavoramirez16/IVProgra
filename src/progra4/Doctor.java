@@ -1,8 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+    /* 
+    HBenavides 10/08/2017
+    Clase Doctor, Catalogo de doctores que están registrados en el sistema.
+    */
 package progra4;
 /**
  *

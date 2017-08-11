@@ -1,8 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+    /* 
+    HBenavides 10/08/2017
+    Clase Agenda, encargada del insumo de las citas de los pacientes relacionado 
+    con los doctores  -- Patron
+    */
 package progra4;
 
 /**
@@ -10,6 +10,11 @@ package progra4;
  * @author jmanu
  */
 public class Agendas {
+    /* 
+    HBenavides 10/08/2017
+    Conexión de base de datos
+    */
+    
     Conexiondb conect = new Conexiondb();
     
     Agendas() {
@@ -23,6 +28,10 @@ public class Agendas {
         }
         return agregado;
     }
+    /* 
+    HBenavides 10/08/2017
+    Edición de los datos
+    */
     
     public boolean editar(String datos, String condicion){
         boolean editado = false;
@@ -32,6 +41,10 @@ public class Agendas {
         return editado;
     }
     
+    /* 
+    HBenavides 10/08/2017
+    Eliminación de datos
+    */
     public boolean eliminar(String condicion){
         boolean eliminado = false;
         if(conect.eliminar(tabla,condicion)){
@@ -39,7 +52,10 @@ public class Agendas {
         }
         return eliminado;
     }
-    /* procedimiento para imprimir la información*/
+    /* 
+    HBenavides 10/08/2017
+    Procedimiento para imprimir la información de agendas
+    */
     public String [][] imprimir(String datos, String condicion, String order){
         String [][] resultado = conect.imprimir(tabla,datos,condicion,order);
         for (int x=0; x < resultado.length; x++) {

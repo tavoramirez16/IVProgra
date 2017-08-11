@@ -1,8 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+    /* 
+    HBenavides 10/08/2017
+    Clase conexión, se encarga de la conexión de base de datos, se utiliza el 
+    patron Factory mezclado con proxy.
+    */
 package progra4;
 
 import java.sql.Connection;
@@ -23,7 +23,11 @@ public class Conexiondb {
     String url = "jdbc:mysql://progressivehostcr.com:3306/progress_progra4";
     String user = "progress_progra4";
     String pass = "2iQcq^9q#S4m";
-    
+     /* 
+    HBenavides 10/08/2017
+    Método de conexión de base de datos
+    */
+   
     public boolean connect(){
         boolean coneccion = false;
         try(Connection connection = DriverManager.getConnection(url,user,pass)){
@@ -34,6 +38,10 @@ public class Conexiondb {
         }
         return coneccion;
     }
+     /* 
+    HBenavides 10/08/2017
+    Método que agrega información a la base datos.
+    */
     
     public boolean agregar(String tabla, String data){
         boolean agregado = false;
@@ -65,6 +73,10 @@ public class Conexiondb {
         }
         return agregado;
     }
+     /* 
+    HBenavides 10/08/2017
+    Método de modificación de datos.
+    */
     public boolean editar(String tabla, String data, String condicion){
         boolean editar = false;
         String datos = datos(data);
@@ -83,6 +95,10 @@ public class Conexiondb {
         }
         return editar;
     }
+     /* 
+    HBenavides 10/08/2017
+    Método que toma la data y la prepara para ser enviada a mostrar en las pantallas.
+    */
     
     public boolean eliminar(String tabla, String condicion){
         boolean eliminar = false;

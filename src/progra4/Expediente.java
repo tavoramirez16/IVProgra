@@ -1,8 +1,16 @@
+    /* 
+    HBenavides 10/08/2017
+    Clase Expediente, Catalogo de expedientes del sistema.
+    */
 package progra4;
 
 import progra4.Conexiondb;
 import progra4.Conexiondb;
 import progra4.ui.GuiExpediente;
+/**
+ *
+ * @author hbenavides
+ */
 
 public class Expediente {
 

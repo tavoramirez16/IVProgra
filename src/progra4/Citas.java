@@ -1,8 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+    /* 
+    HBenavides 10/08/2017
+    Clase Citas, encargada calendarizar las citas de los pacientes
+    */
 package progra4;
 
 import progra4.Conexiondb;
@@ -25,7 +24,10 @@ public class Citas {
         }
         return agregado;
     }
-    
+    /* 
+    HBenavides 10/08/2017
+    Procedimiento de edición de datos
+    */    
     public boolean editar(String datos, String condicion){
         boolean editado = false;
         if(conect.editar(tabla,datos,condicion)){
@@ -33,7 +35,10 @@ public class Citas {
         }
         return editado;
     }
-    
+    /* 
+    HBenavides 10/08/2017
+    Procedimiento de eliminicación de datos.
+    */    
     public boolean eliminar(String condicion){
         boolean eliminado = false;
         if(conect.eliminar(tabla,condicion)){
@@ -41,6 +46,10 @@ public class Citas {
         }
         return eliminado;
     }
+    /* 
+    HBenavides 10/08/2017
+    Procedimiento de impresión de los datos.
+    */
     
     public String [][] imprimir(String datos, String condicion, String order){
         String [][] resultado = conect.imprimir(tabla,datos,condicion,order);

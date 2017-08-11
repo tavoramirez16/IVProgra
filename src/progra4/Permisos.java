@@ -1,8 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+    /* 
+    HBenavides 10/08/2017
+    Clase Permisos, Administración de los permisos de los usuarios que iteractuan
+    en el sistema.
+    Patron utilizado Proxy
+    */
 package progra4;
 
 /**
