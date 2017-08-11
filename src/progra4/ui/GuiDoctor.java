@@ -218,12 +218,33 @@ public class GuiDoctor extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldIdentificacionActionPerformed
 
+    private void limpiar(){
+        jTextFieldIdentificacion.setText("");
+        jTextFieldNombre.setText("");
+        jTextFieldEspecialidad.setText("");
+        jTextFieldCorreo.setText("");
+        jTextFieldTelefono.setText("");
+    }
     private void jButtonSalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonSalirActionPerformed
 
         System.exit(0);//Cerrar la ventana
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonSalirActionPerformed
 
+    private void imprimirselect(){
+        int itemCount = jComboBoxBusqueda.getItemCount();
+        for(int i=0;i<itemCount;i++){
+            jComboBoxBusqueda.removeItemAt(0);
+         }
+        String data = "idDoctor , nombre";
+        String condicion = null;
+        String order = "idDoctor->ASC";
+        String[][] resultado = doc.imprimir(data, condicion, order);
+        for (int x=0; x < resultado.length; x++) {
+             jComboBoxBusqueda.addItem(resultado[x][0]+"-"+resultado[x][1]);
+        }
+    
+    }
     private void jButtonMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonMenuActionPerformed
 
         GuiMenu menu = new GuiMenu();
