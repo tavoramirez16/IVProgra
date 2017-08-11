@@ -1,10 +1,17 @@
+    /* 
+    HBenavides 10/08/2017
+    Clase Paciente Catalogo de pacientes del sistema.
+    */
 
 package progra4;
 
 
 
 public class Paciente {
-    
+/**
+ *
+ * @author hbenavides
+ */    
     Conexiondb conect = new Conexiondb();
     
     public Paciente() {
