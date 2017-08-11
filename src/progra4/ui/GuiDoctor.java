@@ -185,11 +185,33 @@ public class GuiDoctor extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextFieldCorreoActionPerformed
 
     private void jButtonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGuardarActionPerformed
-        // TODO add your handling code here:
+        // yoorda
+        String id = jTextFieldIdentificacion.getText();
+        String nombre = jTextFieldNombre.getText();
+        String especialidad = jTextFieldEspecialidad.getText();
+        String correo= jTextFieldCorreo.getText();
+        String telefono= jTextFieldTelefono.getText();
+        String datos = "idEspecialidad->'"+especialidad+"',"
+                + "nombre->'"+nombre+"',telefono->'"+telefono+"',correo->'"+correo+"'";
+        String condicion= "idDoctor->'"+id;
+        boolean respuesta;
+        if(jTextFieldIdentificacion.getText().length()==0){
+            respuesta = doc.agregar(datos);
+        }
+        else{
+            respuesta = doc.editar(datos, condicion);
+        }
+        if(respuesta){
+            jLabelESTADO.setText("Guardado Correctamente");
+            imprimirselect();
+        }else{
+            jLabelESTADO.setText("Error Guardado");
+        }       
     }//GEN-LAST:event_jButtonGuardarActionPerformed
 
     private void jButtonBuscarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonBuscarActionPerformed
-        // TODO add your handling code here:
+        // yoorda
+        
     }//GEN-LAST:event_jButtonBuscarActionPerformed
 
     private void jTextFieldIdentificacionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldIdentificacionActionPerformed
