@@ -1,6 +1,6 @@
     /* 
-    HBenavides 10/08/2017
-    Clase Asistentes, encargada del catalogo de los asistentes por doctores
+    Yoorda 10/08/2017
+    Clase Asistentes de doctores, encargada del catalogo de los asistentes por doctores
     en la clinica
     */
 package progra4;
@@ -45,52 +45,34 @@ public class AsistenteDoctor {
         this.telefono = telefono;
     }//fin metodo setTelefono
 
+    /*Mejora de codigo*/
     /*metodo para agregar un doctor*/
-     public boolean agregar(){
+     public boolean agregar(String datos){
         boolean agregado = false;
-        idAsistente= 0;
-        nombre = "";
-        telefono = "";
-        String tabla = "Asistentes";
-        String datos = "idAsistente->'"+idAsistente+"', nombre->'"+nombre+"', telefono->'"+telefono+"'";
         if(conect.agregar(tabla,datos)){
             agregado = true;
         }//fin del if
         return agregado;
     }//fin metodo agregar
     /*metodo para editar algun dato de un doctor*/
-    public boolean editar(){
+    public boolean editar(String datos, String condicion){
         boolean editado = false;
-        telefono = "";
-        String tabla = "Asistentes";
-        String datos = "telefono->'"+telefono+"'";
-        String condicion = "idAsistente->05";
         if(conect.editar(tabla,datos,condicion)){
             editado = true;
         }//fin del if
         return editado;
     }//fin metodo editar   
     /*metodo para eliminar un doctor*/
-    public boolean eliminar(){
+    public boolean eliminar(String condicion){
         boolean eliminado = false;
-        String tabla = "Asistentes";
-        String condicion = "idAsistente->80";
         if(conect.eliminar(tabla,condicion)){
             eliminado = true;
         }//fin del if
         return eliminado;
     }//fin metodo eliminar   
     /*metodo para imprimir todos los doctores*/
-    public void imprimir(){
-        String tabla = "Asistentes";
-        String datos = "*";
-        String condicion = null;
-        String order = null;
-        String [][] resultado = conect.imprimir(tabla,datos,condicion,order);
-        for (int x=0; x < resultado.length; x++) {
-            for (int y=0; y < resultado[x].length; y++) {
-              System.out.println (resultado[x][y]);
-            }//fin for interno
-        }//fin for
+    public String [][] imprimir(String datos, String condicion, String order){
+        String [][] resultado = conect.imprimir(tabla,datos,condicion, order);
+        return resultado;
     }//fin metodo imprimir
 }//fin clase AsistenteDoctor
