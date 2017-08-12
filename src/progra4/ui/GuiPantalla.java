@@ -216,7 +216,7 @@ public class GuiPantalla extends javax.swing.JFrame {
         for (int i = 0; i < itemCount; i++) {
             jComboBoxBusqueda.removeItemAt(0);
         }
-        String data = "idPantalla , nombre";
+        String data = "idPantalla";
         String condicion = null;
         String order = "idPantalla->ASC";
         String[][] resultado = pantalla.imprimir(data, condicion, order);
