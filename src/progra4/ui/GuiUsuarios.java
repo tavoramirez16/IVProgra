@@ -5,6 +5,8 @@
  */
 package progra4.ui;
 
+import progra4.CatalogoUsuario;
+
 /**
  *
  * @author jmanu
@@ -14,8 +16,10 @@ public class GuiUsuarios extends javax.swing.JFrame {
     /**
      * Creates new form GuiPermisos
      */
+    CatalogoUsuario usuarios = new CatalogoUsuario();
     public GuiUsuarios() {
         initComponents();
+        imprimirselect();
         this.setLocationRelativeTo(null);
     }
 
@@ -47,6 +51,9 @@ public class GuiUsuarios extends javax.swing.JFrame {
         jButtonSalir = new javax.swing.JButton();
         jButtonMenu = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabelMensaje = new javax.swing.JLabel();
+        jLabelMensaje1 = new javax.swing.JLabel();
+        jTextFieldfitro = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMinimumSize(new java.awt.Dimension(620, 390));
@@ -160,6 +167,18 @@ public class GuiUsuarios extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(0, 0, 620, 390);
 
+        jLabelMensaje.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        getContentPane().add(jLabelMensaje);
+        jLabelMensaje.setBounds(20, 280, 160, 40);
+
+        jLabelMensaje1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        getContentPane().add(jLabelMensaje1);
+        jLabelMensaje1.setBounds(20, 280, 160, 40);
+
+        jTextFieldfitro.setText("jTextField1");
+        getContentPane().add(jTextFieldfitro);
+        jTextFieldfitro.setBounds(140, 320, 59, 20);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -172,6 +191,30 @@ public class GuiUsuarios extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextFieldContraActionPerformed
 
     private void jButtonGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonGuardarActionPerformed
+
+        jLabelMensaje.setText("");
+        String id = jTextFieldIdentificacion.getText();
+        String codigoUsuario = jTextFieldCodigo.getText();
+        String idPermiso = "";
+        String usuario = jTextFieldUsuario.getText();
+        String contra = jTextFieldContra.getText();
+        String data = "idUsuario->'" + id + "',"
+                + "CodigoUsuario->'" + codigoUsuario + "',"
+                + "idPermiso->'" + idPermiso + "',"
+                + "Usuario->'" + usuario + "',"
+                + "PasswordUser->'" + contra + "',";
+        String condicion = "idUsuario->" + id;
+        boolean respuesta;
+        if (jTextFieldfitro.getText().length() == 0) {
+            respuesta = usuarios.agregar(data);
+        } else {
+            respuesta = usuarios.editar(data, condicion);
+        }
+        if (respuesta) {
+            jLabelMensaje.setText("Guardado Correctamente");
+        } else {
+            jLabelMensaje.setText("Error Guardado");
+        }
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonGuardarActionPerformed
 
@@ -193,6 +236,20 @@ public class GuiUsuarios extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButtonMenuActionPerformed
 
+    private void imprimirselect() {
+        int itemCount = jComboBoxBusqueda.getItemCount();
+        for (int i = 0; i < itemCount; i++) {
+            jComboBoxBusqueda.removeItemAt(0);
+        }
+        String data = "idUsuario";
+        String condicion = null;
+        String order = "idUsuario->ASC";
+        String[][] resultado = usuarios.imprimir(data, condicion, order);
+        for (int x = 0; x < resultado.length; x++) {
+            jComboBoxBusqueda.addItem(resultado[x][0]);
+        }
+    }
+    
     /**
      * @param args the command line arguments
      */
@@ -243,11 +300,14 @@ public class GuiUsuarios extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
+    private javax.swing.JLabel jLabelMensaje;
+    private javax.swing.JLabel jLabelMensaje1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea;
     private javax.swing.JTextField jTextFieldCodigo;
     private javax.swing.JTextField jTextFieldContra;
     private javax.swing.JTextField jTextFieldIdentificacion;
     private javax.swing.JTextField jTextFieldUsuario;
+    private javax.swing.JTextField jTextFieldfitro;
     // End of variables declaration//GEN-END:variables
 }

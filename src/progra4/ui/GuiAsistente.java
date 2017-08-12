@@ -48,6 +48,7 @@ public class GuiAsistente extends javax.swing.JFrame {
         jButtonSalir = new javax.swing.JButton();
         jButtonMenu = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
+        jLabelMensaje = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(620, 390));
@@ -93,11 +94,11 @@ public class GuiAsistente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextFieldIdentificacion);
-        jTextFieldIdentificacion.setBounds(120, 190, 170, 22);
+        jTextFieldIdentificacion.setBounds(120, 190, 170, 20);
         getContentPane().add(jTextFieldNombre);
-        jTextFieldNombre.setBounds(90, 230, 200, 22);
+        jTextFieldNombre.setBounds(90, 230, 200, 20);
         getContentPane().add(jTextFieldTelefono);
-        jTextFieldTelefono.setBounds(90, 270, 200, 22);
+        jTextFieldTelefono.setBounds(90, 270, 200, 20);
 
         jButtonGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Guardar-01.png"))); // NOI18N
         jButtonGuardar.addActionListener(new java.awt.event.ActionListener() {
@@ -155,6 +156,10 @@ public class GuiAsistente extends javax.swing.JFrame {
         getContentPane().add(jLabel2);
         jLabel2.setBounds(-6, -6, 650, 410);
 
+        jLabelMensaje.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        getContentPane().add(jLabelMensaje);
+        jLabelMensaje.setBounds(20, 310, 160, 30);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -174,11 +179,11 @@ public class GuiAsistente extends javax.swing.JFrame {
             respuesta = asistente.editar(datos, condicion);
         }
         if(respuesta){
-            jLabelESTADO.setText("Guardado Correctamente");
+            jLabelMensaje.setText("Guardado Correctamente");
             imprimirselect();
             limpiar();
         }else{
-            jLabelESTADO.setText("Error al Guardar");
+            jLabelMensaje.setText("Error al Guardar");
         }
     }//GEN-LAST:event_jButtonGuardarActionPerformed
 
@@ -294,6 +299,7 @@ public class GuiAsistente extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabelMensaje;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTextArea jTextArea;
     private javax.swing.JTextField jTextFieldIdentificacion;

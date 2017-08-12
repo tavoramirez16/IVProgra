@@ -15,9 +15,10 @@ public class Doctor {
     private String telefono;//Número de telefono del doctor
     private String correo;//Correo electronico del doctor
     Conexiondb conect = new Conexiondb();
+    String tabla = "Doctor";
     
     //metodo constructor
-    Doctor(){}
+    public Doctor(){}
 
     /* 
     Yoorda 10/08/2017

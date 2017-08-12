@@ -5,6 +5,8 @@
  */
 package progra4.ui;
 
+import progra4.Doctor;
+
 /**
  *
  * @author yoorda
@@ -14,6 +16,7 @@ public class GuiDoctor extends javax.swing.JFrame {
     /**
      * Creates new form GuiDoctor
      */
+    Doctor doc = new Doctor();
     public GuiDoctor() {
         initComponents();
         this.setLocationRelativeTo(null);
