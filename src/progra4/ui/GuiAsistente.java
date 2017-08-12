@@ -174,11 +174,11 @@ public class GuiAsistente extends javax.swing.JFrame {
             respuesta = asistente.editar(datos, condicion);
         }
         if(respuesta){
-            jLabelESTADO.setText("Guardado Correctamente");
+            //jLabelESTADO.setText("Guardado Correctamente");
             imprimirselect();
             limpiar();
         }else{
-            jLabelESTADO.setText("Error al Guardar");
+            //jLabelESTADO.setText("Error al Guardar");
         }
     }//GEN-LAST:event_jButtonGuardarActionPerformed
 

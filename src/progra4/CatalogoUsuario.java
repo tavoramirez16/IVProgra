@@ -17,7 +17,7 @@ public class CatalogoUsuario {
     Conexiondb conect = new Conexiondb();
     
     //metodo constructor
-    CatalogoUsuario(){}
+    public CatalogoUsuario(){}
    
     /*Get y Set de los datos*/
     //metodo que devuelve un entero del id del usuario

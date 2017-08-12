@@ -101,9 +101,9 @@ public class GuiAgenda extends javax.swing.JFrame {
         getContentPane().add(jButtonGuardar);
         jButtonGuardar.setBounds(250, 310, 40, 40);
         getContentPane().add(jTextFieldNota);
-        jTextFieldNota.setBounds(60, 270, 230, 20);
+        jTextFieldNota.setBounds(60, 270, 230, 22);
         getContentPane().add(jTextFieldAsistente);
-        jTextFieldAsistente.setBounds(110, 230, 180, 20);
+        jTextFieldAsistente.setBounds(110, 230, 180, 22);
 
         jTextFieldPaciente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -111,7 +111,7 @@ public class GuiAgenda extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextFieldPaciente);
-        jTextFieldPaciente.setBounds(110, 190, 180, 20);
+        jTextFieldPaciente.setBounds(110, 190, 180, 22);
 
         jTextFieldIdentificacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
