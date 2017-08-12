@@ -5,12 +5,15 @@
  */
 package progra4.ui;
 
+import progra4.CatalogoUsuario;
+
 /**
  *
  * @author Tavo
  */
 public class GuiLogin extends javax.swing.JFrame {
-
+     
+    CatalogoUsuario usuario = new CatalogoUsuario();
     /**
      * Creates new form GuiLogin
      */
@@ -103,6 +106,18 @@ public class GuiLogin extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
+        String user = jTextField1.toString();
+        String password = jTextField2.toString();
+        String data = "idUsuario";
+        String condicion = "Usuario->"+user+",PasswordUser->"+password;
+        String order = "idPaciente->ASC";
+        String[][] resultado = usuario.imprimir(data, condicion, order);
+        for (int x = 0; x < resultado.length; x++) {
+            GuiMenu menu = new GuiMenu();
+            menu.setVisible(true);
+            this.setVisible(false);
+        }
+        
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jTextField1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField1ActionPerformed

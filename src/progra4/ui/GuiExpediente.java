@@ -155,7 +155,7 @@ public class GuiExpediente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextFieldNExpediente);
-        jTextFieldNExpediente.setBounds(420, 90, 140, 20);
+        jTextFieldNExpediente.setBounds(420, 90, 140, 22);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel1.setText("Fecha de Expediente");
@@ -168,7 +168,7 @@ public class GuiExpediente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextFieldFechaExpediente);
-        jTextFieldFechaExpediente.setBounds(400, 120, 160, 20);
+        jTextFieldFechaExpediente.setBounds(400, 120, 160, 22);
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel4.setText("Tratamiento");
@@ -215,7 +215,7 @@ public class GuiExpediente extends javax.swing.JFrame {
         getContentPane().add(jLabel12);
         jLabel12.setBounds(310, 290, 40, 15);
         getContentPane().add(jTextFieldOtros);
-        jTextFieldOtros.setBounds(310, 310, 250, 20);
+        jTextFieldOtros.setBounds(310, 310, 250, 22);
 
         jComboBoxidE.setDebugGraphicsOptions(javax.swing.DebugGraphics.NONE_OPTION);
         jComboBoxidE.addActionListener(new java.awt.event.ActionListener() {
@@ -224,7 +224,7 @@ public class GuiExpediente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jComboBoxidE);
-        jComboBoxidE.setBounds(140, 90, 120, 20);
+        jComboBoxidE.setBounds(140, 90, 120, 22);
 
         jTextFieldfitro.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Pantallas3-01.png"))); // NOI18N
         getContentPane().add(jTextFieldfitro);
@@ -232,7 +232,7 @@ public class GuiExpediente extends javax.swing.JFrame {
 
         jTextField1.setText("jTextField1");
         getContentPane().add(jTextField1);
-        jTextField1.setBounds(560, 230, 59, 20);
+        jTextField1.setBounds(560, 230, 69, 22);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

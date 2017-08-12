@@ -180,6 +180,7 @@ public class GuiAsistente extends javax.swing.JFrame {
         }
         if(respuesta){
             jLabelMensaje.setText("Guardado Correctamente");
+
             imprimirselect();
             limpiar();
         }else{

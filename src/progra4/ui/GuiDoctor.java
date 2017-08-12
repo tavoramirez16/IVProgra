@@ -4,9 +4,7 @@
  * and open the template in the editor.
  */
 package progra4.ui;
-
 import progra4.Doctor;
-
 /**
  *
  * @author yoorda
@@ -65,7 +63,7 @@ public class GuiDoctor extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Dolce Vita Heavy", 1, 24)); // NOI18N
         jLabel1.setText("Ingresar");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(40, 110, 99, 29);
+        jLabel1.setBounds(40, 110, 94, 32);
 
         jLabel3.setFont(new java.awt.Font("Dolce Vita Heavy", 1, 48)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 51));
@@ -109,13 +107,13 @@ public class GuiDoctor extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextFieldIdentificacion);
-        jTextFieldIdentificacion.setBounds(120, 160, 170, 20);
+        jTextFieldIdentificacion.setBounds(120, 160, 170, 22);
         getContentPane().add(jTextFieldEspecialidad);
-        jTextFieldEspecialidad.setBounds(110, 190, 180, 20);
+        jTextFieldEspecialidad.setBounds(110, 190, 180, 22);
         getContentPane().add(jTextFieldNombre);
-        jTextFieldNombre.setBounds(90, 220, 200, 20);
+        jTextFieldNombre.setBounds(90, 220, 200, 22);
         getContentPane().add(jTextFieldTelefono);
-        jTextFieldTelefono.setBounds(90, 250, 200, 20);
+        jTextFieldTelefono.setBounds(90, 250, 200, 22);
 
         jTextFieldCorreo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -123,7 +121,7 @@ public class GuiDoctor extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextFieldCorreo);
-        jTextFieldCorreo.setBounds(90, 280, 200, 20);
+        jTextFieldCorreo.setBounds(90, 280, 200, 22);
 
         jButtonGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Guardar-01.png"))); // NOI18N
         jButtonGuardar.addActionListener(new java.awt.event.ActionListener() {

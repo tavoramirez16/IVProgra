@@ -16,7 +16,8 @@ public class Doctor {
     private String correo;//Correo electronico del doctor
     Conexiondb conect = new Conexiondb();
     String tabla = "Doctor";
-    
+   // String tabla = "Doctores";
+
     //metodo constructor
     public Doctor(){}
 

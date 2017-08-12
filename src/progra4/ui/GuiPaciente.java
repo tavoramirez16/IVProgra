@@ -69,7 +69,7 @@ public class GuiPaciente extends javax.swing.JFrame {
         jLabel1.setFont(new java.awt.Font("Dolce Vita Heavy", 1, 24)); // NOI18N
         jLabel1.setText("Ingresar");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(40, 110, 110, 29);
+        jLabel1.setBounds(40, 110, 110, 32);
 
         jLabel3.setFont(new java.awt.Font("Dolce Vita Heavy", 1, 48)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 0, 51));
@@ -103,13 +103,13 @@ public class GuiPaciente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextFieldIdentificacion);
-        jTextFieldIdentificacion.setBounds(110, 160, 150, 20);
+        jTextFieldIdentificacion.setBounds(110, 160, 150, 22);
         getContentPane().add(jTextFieldNombrePaciente);
-        jTextFieldNombrePaciente.setBounds(90, 190, 170, 20);
+        jTextFieldNombrePaciente.setBounds(90, 190, 170, 22);
         getContentPane().add(jTextFieldTelefono);
-        jTextFieldTelefono.setBounds(90, 220, 170, 20);
+        jTextFieldTelefono.setBounds(90, 220, 170, 22);
         getContentPane().add(jTextFieldEmaill);
-        jTextFieldEmaill.setBounds(90, 250, 170, 20);
+        jTextFieldEmaill.setBounds(90, 250, 170, 22);
 
         jTextFieldFechaNac.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -117,7 +117,7 @@ public class GuiPaciente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextFieldFechaNac);
-        jTextFieldFechaNac.setBounds(140, 280, 120, 20);
+        jTextFieldFechaNac.setBounds(140, 280, 120, 22);
 
         jButtonGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Guardar-01.png"))); // NOI18N
         jButtonGuardar.addActionListener(new java.awt.event.ActionListener() {
@@ -207,7 +207,7 @@ public class GuiPaciente extends javax.swing.JFrame {
             }
         });
         getContentPane().add(jTextFieldfitro);
-        jTextFieldfitro.setBounds(50, 330, 10, 20);
+        jTextFieldfitro.setBounds(50, 330, 10, 22);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
